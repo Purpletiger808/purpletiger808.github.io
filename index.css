@@ -1,1 +1,86 @@
+@font-face{
+    font-family: "Ubuntu";
+    src: url("./font/UbuntuMono-Regular.tff");
+}
 
+body {
+    background-image: radial-gradient(circle at bottom,rgb(216, 69, 43) 0%, rgb(255, 113, 43) 10%, rgba(255,171,48,1) 20%, rgba(185,166,164,1) 65%, rgb(118, 126, 199) 90%, rgba(43, 0, 122, 0.651) 100%);/*rgb(215, 96, 52)*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-family: "Ubuntu", monospace;
+}
+
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.indent{
+    padding-left: 1ch;
+}
+
+.doubleindent{
+    padding-left: 2ch;
+}
+
+a:hover{
+    animation: flicker 2s;
+    text-decoration: none;
+    color: black;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.flicker{
+    animation-name: flicker;
+    margin: 25px;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flicker{
+    0% {
+        opacity: 100%;
+    }
+
+    1% {
+        opacity: 0%;
+    }
+
+    19% {
+        opacity: 0%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    83%{
+        opacity: 100%;
+    }
+
+    89%{
+        opacity: 0%;
+    }
+
+    95%{
+        opacity: 100;
+    }
+
+    99% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
