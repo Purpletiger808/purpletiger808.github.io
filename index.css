@@ -4,12 +4,12 @@
 }
 
 body {
-    background-image: radial-gradient(circle at bottom,rgb(216, 69, 43) 0%, rgb(255, 113, 43) 10%, rgba(255,171,48,1) 20%, rgba(185,166,164,1) 65%, rgb(118, 126, 199) 90%, rgba(43, 0, 122, 0.651) 100%);/*rgb(215, 96, 52)*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: black;
     color: black;
     text-align: center;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
     font-family: "Ubuntu", monospace;
 }
 
@@ -19,6 +19,22 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.box{
+    background-image: radial-gradient(circle at bottom,rgb(216, 69, 43) 0%, rgb(255, 113, 43) 10%, rgba(255,171,48,1) 20%, rgba(185,166,164,1) 65%, rgb(118, 126, 199) 90%, rgba(43, 0, 122, 0.651) 100%);/*rgb(215, 96, 52)*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10ch;
+    padding-top: 13ch;
+    padding-bottom: 13ch;
+    
+}
+
+.windowsborder{
+    border: 5px solid;
+    border-top: 20px solid;
+    border-color: rgb(146, 146, 146);
 }
 
 .indent{
