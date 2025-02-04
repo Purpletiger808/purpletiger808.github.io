@@ -3,8 +3,15 @@
     src: url("./font/UbuntuMono-Regular.tff");
 }
 
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
 body {
-    background-color: black;
+    max-width: 600px;
+    background-color: rgb(38, 37, 39);
     color: black;
     text-align: center;
     margin: 0;
@@ -13,28 +20,59 @@ body {
     font-family: "Ubuntu", monospace;
 }
 
+h1, h2{
+    margin-bottom: 0px !important;
+}
+
+p{
+    margin: 0px !important;
+}
+
 .center{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.badgeland{
+    text-align: center;
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+
+.badgeland img{
+    width: 88px;
+    height: 31px;
 }
 
 .box{
-    background-image: radial-gradient(circle at bottom,rgb(216, 69, 43) 0%, rgb(255, 113, 43) 10%, rgba(255,171,48,1) 20%, rgba(185,166,164,1) 65%, rgb(118, 126, 199) 90%, rgba(43, 0, 122, 0.651) 100%);/*rgb(215, 96, 52)*/
+    /* background-image: radial-gradient(circle at bottom,rgb(216, 69, 43) 0%, rgb(255, 113, 43) 10%, rgba(255,171,48,1) 20%, rgba(185,166,164,1) 65%, rgb(118, 126, 199) 90%, rgba(43, 0, 122, 0.651) 100%);rgb(215, 96, 52) */
+    background-color: antiquewhite;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 10ch;
-    padding-top: 13ch;
-    padding-bottom: 13ch;
-    
+    padding-left: 5ch;
+    padding-right: 5ch;
+    padding-top: 5ch;
+    margin-bottom: 10px;
+    display: flex;
+        flex-direction: column;
+    min-height: 20vh;
+    min-width: 600px;
 }
 
-.windowsborder{
+.border{
     border: 5px solid;
-    border-top: 20px solid;
-    border-color: rgb(146, 146, 146);
+    /* border-top: 0px solid; */
+    border-color: rgb(126, 121, 121);
 }
 
 .indent{
@@ -45,10 +83,26 @@ body {
     padding-left: 2ch;
 }
 
+.headerlink{
+    color: rgb(92, 92, 92) !important;
+    text-decoration: underline !important;
+}
+
+.bottom {
+    bottom: 10px !important;
+    text-align: center !important;
+    margin-top: auto !important;
+    padding-top: 5ch;
+}
+
+.small{
+    font-size: smaller;
+}
+
 a:hover{
-    animation: flicker 2s;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 a:visited, a:link{
