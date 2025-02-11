@@ -10,6 +10,7 @@
   }
 
 body {
+    width: auto;
     max-width: 600px;
     background-color: rgb(38, 37, 39);
     color: black;
@@ -66,7 +67,7 @@ p{
     display: flex;
         flex-direction: column;
     min-height: 20vh;
-    min-width: 600px;
+    min-width: 480px;
 }
 
 .border{
@@ -93,6 +94,11 @@ p{
     text-align: center !important;
     margin-top: auto !important;
     padding-top: 5ch;
+}
+
+.leftlist{
+    text-align: left;
+    text-indent:11ch;
 }
 
 .small{
