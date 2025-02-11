@@ -66,7 +66,7 @@ p{
     margin-bottom: 10px;
     display: flex;
         flex-direction: column;
-    min-height: 20vh;
+    min-height: fit-content;
     min-width: 480px;
 }
 
