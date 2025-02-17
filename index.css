@@ -62,11 +62,13 @@ p{
     background-attachment: fixed;
     padding-left: 5ch;
     padding-right: 5ch;
-    padding-top: 5ch;
+    padding-top: 2ch;
     margin-bottom: 10px;
     display: flex;
         flex-direction: column;
+    height: auto;
     min-height: fit-content;
+    width: auto;
     min-width: 480px;
 }
 
@@ -89,6 +91,11 @@ p{
     text-decoration: underline !important;
 }
 
+.intextlink{
+    color:blueviolet !important;
+    text-decoration: underline !important;
+}
+
 .bottom {
     bottom: 10px !important;
     text-align: center !important;
@@ -99,6 +106,10 @@ p{
 .leftlist{
     text-align: left;
     text-indent:11ch;
+}
+
+.centertext{
+    text-align: center;
 }
 
 .small{
