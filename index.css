@@ -14,7 +14,6 @@ body {
     max-width: 600px;
     background-color: rgb(38, 37, 39);
     color: black;
-    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -97,9 +96,10 @@ p{
 }
 
 .bottom {
-    bottom: 10px !important;
+    bottom: 5px !important;
     text-align: center !important;
     margin-top: auto !important;
+    margin-bottom: 5px !important;
     padding-top: 5ch;
 }
 
